@@ -1,2 +1,2 @@
 # AttentDifferNet
-Repo for AttentDifferNet website
+Repo for the AttentDifferNet website

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- bootswatch css -->
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+	<style>
+		body {
+			padding-top: 5rem;
+		}
+		.starter-template {
+			padding: 3rem 1.5rem;
+		}
+	</style>
+
+	<title>AttentDifferNet</title>
+</head>
+
+<body>
+<div class="container-fluid" style="max-width:900px;margin-left:auto;margin-right:auto;">
+	<div class="row">
+		<h4 class="display-4" style="text-align:center;">Attention Modules Improve Image-Level Anomaly Detection for Industrial Inspection: A DifferNet Case Study </h4><br>
+	</div>
+	<br>
+	<div class="row justify-content-md-center">
+		<h5> André Luiz Buarque Vieira e Silva &emsp; Francisco Simões &emsp; Danny Kowerko </h5>
+		<h5> Tobias Schlosser &emsp; Felipe Battisti &emsp; Veronica Teichrieb</h5>
+	</div>
+	<br>
+	<div class="row justify-content-md-center">
+	  <h4>[<a href="https://arxiv.org/abs/2311.02747">Paper</a>]</h4>
+	</div>
+	<br>
+	<div class="row justify-content-md-center">
+		<h4>[<a href="https://github.com/andreluizbvs/InsPLAD">Dataset (InsPLAD)</a>]</h4>
+	</div>
+	<br>
+	<div class="row justify-content-md-center">
+		<div class="col-md-12 text-center">
+			<h3 class="display-5" style="color: gray">WACV 2024 main conference</h3>
+		</div>
+	</div> 
+	<br>
+	<div class="row">
+		<h5 style="text-align: left;">
+			InsPLAD dataset
+		</h5>
+		<p> Grad-CAM activation mapping comparison between DifferNet’s backbone versus AttentDifferNet (SENet)’s backbone.</p>
+		<img src="imgs/insplad_gradcam.png" class="img-responsive" alt="overview" style="width: 80%; padding: 15px"><br>
+		<div class="col">
+			<h3 style="text-align: left;">
+				Abstract
+			</h3>
+			<p class="text-justify">
+				Within (semi-)automated visual industrial inspection, learning-based approaches for assessing visual defects, including deep neural networks, enable the processing of otherwise small defect patterns in pixel size on high-resolution imagery. The emergence of these often rarely occurring defect patterns explains the general need for labeled data corpora. To alleviate this issue and advance the current state of the art in unsupervised visual inspection, this work proposes a DifferNet-based solution enhanced with attention modules: AttentDifferNet. It improves image-level detection and classification capabilities on three visual anomaly detection datasets for industrial inspection: InsPLAD-fault, MVTec AD, and Semiconductor Wafer. In comparison to the state of the art, AttentDifferNet achieves improved results, which are, in turn, highlighted throughout our quali-quantitative study. Our quantitative evaluation shows an average improvement – compared to DifferNet – of 1.77 ± 0.25 percentage points in overall AUROC considering all three datasets, reaching SOTA results in InsPLAD-fault, an industrial inspection in-the-wild dataset. As our variants to AttentDifferNet show great prospects in the context of currently investigated approaches, a baseline is formulated, emphasizing the importance of attention for industrial anomaly detection both in the wild and in controlled environments.
+			</p>
+		</div>
+	</div>
+<!-- 	<div class="row justify-content-md-center" id="data"> -->
+	<div class="row">
+		<div class="col">
+			<h3 style="text-align: left;">
+				Method
+			</h3>
+			<p class="text-justify">
+				AttentDifferNet uses attention modules in its backbone to help it focus on the object to be inspected and ignore irrelevant information (e.g., the background). We show that coupling attention modules, such as SENets and CBAMs, to Unsupervised Anomaly Detection (UAD) methods, can improve their image-level performance in different contexts (in the wild or in controlled scenarios), both qualitatively and quantitatively.
+			</p>
+			<h5 style="text-align: left;">
+				MVTec AD dataset
+			</h5>
+			<p> Grad-CAM activation mapping comparison between DifferNet’s backbone versus AttentDifferNet (SENet)’s backbone.</p>
+			<img src="imgs/insplad_det.png" class="img-responsive" alt="overview" style="width: 100%; padding: 15px"><br>
+		</div>
+	</div>	
+	<br>
+	<div class="row">
+		<div class="col">
+			<h3 style="text-align: left;">
+				If you use AttentDifferNet or InsPLAD dataset in your research, please cite it:
+
+<br>
+			</h3>
+			<p class="text-justify">
+				@InProceedings{Vieira_2024_WACV,<br>
+					&emsp;author    = {Vieira e Silva, André Luiz Buarque and Simões, Francisco and Kowerko, Danny and Schlosser, Tobias and Battisti, Felipe and Teichrieb, Veronica},<br>
+					&emsp;title     = {Attention Modules Improve Image-Level Anomaly Detection for Industrial Inspection: A DifferNet Case Study},<br>
+					&emsp;booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},<br>
+					&emsp;month     = {January},<br>
+					&emsp;year      = {2024},<br>
+					&emsp;pages     = {(to appear)}<br>
+				}
+				<br><br>
+				@article{doi:10.1080/01431161.2023.2283900,<br>
+				    &emsp;author  = {Vieira e Silva, André Luiz and Felix, Heitor and Simões, Francisco and Teichrieb, Veronica and dos Santos, Michel and Santiago, Hemir and Sgotti, Virgínia and Lott Neto, Henrique},<br>
+				    &emsp;title   = {InsPLAD: A Dataset and Benchmark for Power Line Asset Inspection in UAV Images},<br>
+				    &emsp;journal = {International Journal of Remote Sensing},<br>
+				    &emsp;year    = {2023},<br>
+				    &emsp;doi     = {10.1080/01431161.2023.2283900},<br>
+				}
+			</p>
+		</div>
+	</div>
+</body>
+</html>
