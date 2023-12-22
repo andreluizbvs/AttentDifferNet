@@ -1,6 +1,6 @@
 # AttentDifferNet
 
-This repository presents AttentDifferNet, a method introduced in "_Attention Modules Improve Image-Level Anomaly Detection for Industrial Inspection: A DifferNet Case Study_" [arXiv](https://arxiv.org/abs/2311.02747).
+This repository presents AttentDifferNet, a method introduced in "_Attention Modules Improve Image-Level Anomaly Detection for Industrial Inspection: A DifferNet Case Study_" [WACV2024 CVF](https://openaccess.thecvf.com/content/WACV2024/html/Vieira_e_Silva_Attention_Modules_Improve_Image-Level_Anomaly_Detection_for_Industrial_Inspection_A_WACV_2024_paper.html) | [arXiv](https://arxiv.org/abs/2311.02747).
 
 <img src="https://github.com/andreluizbvs/AttentDifferNet/blob/main/docs/imgs/insplad_gradcam.png" width="650">
 
